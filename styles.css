@@ -507,6 +507,122 @@ blockquote {
   font-size: 1.4rem;
 }
 
+.phase-grid {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.phase-card {
+  background: linear-gradient(135deg, rgba(255, 109, 141, 0.16), rgba(76, 224, 255, 0.1));
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: 0 25px 55px rgba(3, 6, 20, 0.5);
+  display: grid;
+  gap: 0.8rem;
+}
+
+.phase-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: rgba(4, 7, 24, 0.6);
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  color: var(--brand-amber);
+  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.phase-card__note {
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted-soft);
+}
+
+.pill--bright {
+  border-color: transparent;
+  background: linear-gradient(120deg, var(--brand-electric), var(--brand-violet));
+  color: #05101c;
+  box-shadow: 0 10px 30px rgba(255, 109, 141, 0.45);
+}
+
+.spark-panel {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: radial-gradient(circle at 15% 20%, rgba(255, 109, 141, 0.28), transparent 55%),
+              radial-gradient(circle at 80% 10%, rgba(76, 224, 255, 0.25), transparent 55%),
+              rgba(4, 8, 28, 0.8);
+  box-shadow: 0 40px 90px rgba(3, 6, 20, 0.7);
+  display: grid;
+  gap: 1.5rem;
+}
+
+.spark-panel__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.spark-panel__stat {
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(3, 6, 20, 0.55);
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.05);
+  display: grid;
+  gap: 0.4rem;
+}
+
+.spark-panel__stat small {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.62rem;
+  color: var(--muted-soft);
+}
+
+.spark-panel__stat strong {
+  font-size: 1.1rem;
+  color: var(--brand-amber);
+}
+
+.spark-principles {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.spark-principles li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.spark-principles__icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 109, 141, 0.2);
+  color: var(--brand-electric);
+  font-size: 0.9rem;
+}
+
+.spark-panel__footer {
+  font-style: italic;
+  color: var(--muted);
+}
+
 .list-inline {
   display: flex;
   flex-wrap: wrap;
