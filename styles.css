@@ -319,42 +319,125 @@ blockquote {
   z-index: -1;
 }
 
-.hero__simple {
+.hero__layout {
   display: grid;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  gap: clamp(2rem, 4vw, 4rem);
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  align-items: center;
+  align-items: stretch;
 }
 
-.hero__intro {
+.hero__story {
   display: grid;
   gap: 1.5rem;
-  padding: clamp(1.25rem, 3vw, 2.25rem);
+  padding: clamp(1.5rem, 3vw, 2.8rem);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background: linear-gradient(145deg, rgba(3, 5, 18, 0.72), rgba(7, 11, 30, 0.6));
+  background: linear-gradient(150deg, rgba(3, 5, 18, 0.8), rgba(8, 12, 30, 0.55));
   box-shadow: 0 35px 60px rgba(2, 4, 15, 0.6);
 }
 
-.hero__intro h1,
-.hero__intro p {
+.hero__story h1,
+.hero__story p {
   text-shadow: 0 8px 24px rgba(2, 3, 8, 0.65);
 }
 
-.hero__intro .pill {
+.hero__story .pill {
   background: rgba(255, 255, 255, 0.12);
   color: var(--text);
   border-color: rgba(255, 255, 255, 0.22);
 }
 
-.hero__panel {
-  background: linear-gradient(135deg, rgba(255, 109, 141, 0.2), rgba(76, 224, 255, 0.22));
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: clamp(1.5rem, 3vw, 2.5rem);
-  box-shadow: 0 30px 60px rgba(5, 7, 18, 0.4);
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-badge {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.08);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero__meta-grid {
   display: grid;
   gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.hero__meta-card {
+  padding: 1rem 1.2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(3, 6, 20, 0.55);
+  box-shadow: 0 18px 40px rgba(2, 4, 15, 0.5);
+}
+
+.hero__meta-card small {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  color: var(--muted-soft);
+  margin-bottom: 0.4rem;
+}
+
+.hero__meta-card strong {
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.hero__showcase {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.hero__panel {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  box-shadow: 0 30px 60px rgba(5, 7, 18, 0.45);
+  display: grid;
+  gap: 1rem;
+}
+
+.hero__panel--primary {
+  background: linear-gradient(135deg, rgba(255, 109, 141, 0.18), rgba(76, 224, 255, 0.2));
+}
+
+.hero__panel--secondary {
+  background: rgba(3, 6, 20, 0.75);
+}
+
+.hero__schedule {
+  margin: 0;
+  display: grid;
+  gap: 0.9rem;
+}
+
+.hero__schedule div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  padding-bottom: 0.7rem;
+}
+
+.hero__schedule div:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.hero__schedule dt {
+  font-weight: 600;
+  color: var(--text);
+}
+
+.hero__schedule dd {
+  margin: 0.2rem 0 0;
+  color: var(--muted);
 }
 
 .hero__panel ul {
@@ -367,7 +450,7 @@ blockquote {
   display: grid;
   gap: clamp(2rem, 4vw, 3.5rem);
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  align-items: center;
+  align-items: flex-start;
 }
 
 .hero__card {
@@ -380,65 +463,12 @@ blockquote {
   gap: 1.5rem;
 }
 
-.hero__chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  margin-top: 0.5rem;
+.checklist--compact {
+  gap: 0.6rem;
 }
 
-.hero__chip {
-  min-width: 120px;
-  padding: 0.8rem 1rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(5, 8, 24, 0.68);
-  text-align: center;
-  box-shadow: 0 22px 42px rgba(3, 5, 16, 0.55);
-}
-
-.hero__chip small {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.7rem;
-  color: var(--muted-strong);
-}
-
-.hero__chip strong {
-  font-size: 1.1rem;
-  color: #fff;
-}
-
-.hero__stats {
-  margin-top: 2rem;
-}
-
-.stat-grid {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-}
-
-.stat {
-  padding: 1.1rem 1.25rem;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border);
-  background: var(--surface-alt);
-  box-shadow: 0 18px 45px rgba(5, 7, 18, 0.45);
-}
-
-.stat small {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.68rem;
-  color: var(--muted-soft);
-  margin-bottom: 0.4rem;
-}
-
-.stat strong {
-  font-size: 1.7rem;
+.checklist--compact li {
+  font-size: 0.95rem;
 }
 
 .section {
