@@ -2,72 +2,86 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://adventuretime.site/</loc>
-    <changefreq>monthly</changefreq>
+    <lastmod>2024-04-15</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://adventuretime.site/community/</loc>
+    <lastmod>2024-04-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://adventuretime.site/community-guidelines/</loc>
+    <lastmod>2024-04-11</lastmod>
+    <changefreq>quarterly</changefreq>
+    <priority>0.55</priority>
+  </url>
+  <url>
+    <loc>https://adventuretime.site/responsible-play/</loc>
+    <lastmod>2024-04-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://adventuretime.site/auth/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://adventuretime.site/daily-bonus/</loc>
+    <lastmod>2024-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://adventuretime.site/accessibility/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <loc>https://adventuretime.site/leaderboard/</loc>
+    <lastmod>2024-04-10</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.65</priority>
   </url>
   <url>
-    <loc>https://adventuretime.site/community-guidelines/</loc>
+    <loc>https://adventuretime.site/how-it-works/</loc>
+    <lastmod>2024-04-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://adventuretime.site/contact/</loc>
+    <lastmod>2024-04-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://adventuretime.site/cookie-policy/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://adventuretime.site/cookie-settings/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://adventuretime.site/data-rights/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://adventuretime.site/how-it-works/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <priority>0.55</priority>
   </url>
   <url>
     <loc>https://adventuretime.site/privacy/</loc>
+    <lastmod>2024-04-05</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://adventuretime.site/profile/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://adventuretime.site/responsible-play/</loc>
-    <changefreq>quarterly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.45</priority>
   </url>
   <url>
     <loc>https://adventuretime.site/terms/</loc>
+    <lastmod>2024-04-05</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://adventuretime.site/data-rights/</loc>
+    <lastmod>2024-04-07</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.45</priority>
+  </url>
+  <url>
+    <loc>https://adventuretime.site/cookie-policy/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.35</priority>
+  </url>
+  <url>
+    <loc>https://adventuretime.site/cookie-settings/</loc>
+    <lastmod>2024-04-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.32</priority>
+  </url>
+  <url>
+    <loc>https://adventuretime.site/accessibility/</loc>
+    <lastmod>2024-04-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.35</priority>
   </url>
 </urlset>
