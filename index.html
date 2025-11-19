@@ -135,14 +135,16 @@
       <div class="shell">
         <div class="section__header">
           <p class="pill">In-lounge demo</p>
-          <h2>Play Rise of Orpheus right here.</h2>
-          <p>AdventureTime.site streams select social casino experiences directly on the homepage so you can sample the vibe without clicking away. Rise of Orpheus is a free-play slot built for adults 18+ who want mellow pacing, playlists, and zero real-money stakes.</p>
+          <h2>Rise of Orpheus is now playable on AdventureTime.site.</h2>
+          <p>We rebuilt the Rise of Orpheus demo from our game library directly into this page so you can get a feel for the neon pacing without opening a new window. It is the same free-play social casino experience from our nightly lounge&mdash;zero deposits, no prizes, adults 18+ only.</p>
         </div>
 
-        <div class="game-embed" aria-label="Rise of Orpheus demo">
-          <div class="game-embed__frame">
+        <div class="game-showcase" aria-label="Rise of Orpheus demo">
+          <div class="game-iframe-container">
             <iframe
-              src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&amp;gid=riseoforpheus&amp;lang=en_GB&amp;practice=1&amp;channel=desktop&amp;demo=2&amp;refresh=1758626839905"
+              id="orpheus-frame"
+              data-src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&amp;gid=riseoforpheus&amp;lang=en_GB&amp;practice=1&amp;channel=desktop&amp;demo=2"
+              src="https://released.playngonetwork.com/casino/ContainerLauncher?pid=2&amp;gid=riseoforpheus&amp;lang=en_GB&amp;practice=1&amp;channel=desktop&amp;demo=2"
               title="Rise of Orpheus social casino game"
               loading="lazy"
               width="100%"
@@ -152,8 +154,21 @@
               allow="autoplay"
             ></iframe>
           </div>
-          <div class="game-embed__note">
-            <p><strong>Free-play reminder:</strong> Spins are for entertainment only, there are no cash-outs or prizes, and you must be 18+ to participate.</p>
+          <div class="game-info">
+            <p class="pill pill--soft">Demo build</p>
+            <h3>Rise of Orpheus</h3>
+            <p>Classic 5x3 reels with dreamy gradients, calm audio cues, and in-room pacing reminders. Play for as long as you like&mdash;it is all virtual currency.</p>
+            <ul class="game-tag-list">
+              <li>5x3 reels</li>
+              <li>Ambient soundtrack</li>
+              <li>Wild + scatter features</li>
+              <li>Zero cash play</li>
+            </ul>
+            <div class="game-controls">
+              <button class="play-btn" type="button" data-restart="orpheus">Restart demo</button>
+              <a class="cta-btn" href="/responsible-play/">Responsible play tools</a>
+            </div>
+            <p class="game-note"><strong>Reminder:</strong> AdventureTime.site is a social casino lounge with no real money gambling or prizes. Sessions are for adults 18+ only.</p>
           </div>
         </div>
       </div>
@@ -714,6 +729,19 @@
       </a>
     </div>
   </footer>
+  <script>
+    (() => {
+      const frame = document.getElementById('orpheus-frame');
+      const restartBtn = document.querySelector('[data-restart="orpheus"]');
+      if (!frame || !restartBtn) return;
+      const baseSrc = frame.dataset.src || frame.src;
+      restartBtn.addEventListener('click', () => {
+        const stamp = Date.now();
+        const connector = baseSrc.includes('?') ? '&' : '?';
+        frame.src = `${baseSrc}${connector}demoRef=${stamp}`;
+      });
+    })();
+  </script>
   <!-- AdventureTime.site static build marker -->
 </body>
 </html>
