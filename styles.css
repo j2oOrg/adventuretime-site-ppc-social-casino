@@ -561,6 +561,38 @@ blockquote {
   font-size: 1.4rem;
 }
 
+.game-embed {
+  display: grid;
+  gap: 1rem;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.game-embed__frame {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: #050812;
+}
+
+.game-embed__frame iframe {
+  display: block;
+  width: 100%;
+  border: none;
+}
+
+.game-embed__note {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
 .phase-grid {
   margin-top: 2rem;
   display: grid;
