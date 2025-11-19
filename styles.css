@@ -134,6 +134,30 @@ blockquote {
   transform: translate(-50%, 0);
 }
 
+.policy-banner {
+  width: 100%;
+  background: linear-gradient(120deg, #ff6d8d, #ffb38a);
+  color: #1b0b1c;
+  padding: 0.65rem 1rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 120;
+}
+
+.policy-banner p {
+  margin: 0;
+  color: inherit;
+  font-size: 0.9rem;
+}
+
+.policy-banner strong {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
 .shell {
   width: min(1180px, 100%);
   margin: 0 auto;
